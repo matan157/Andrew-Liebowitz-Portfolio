@@ -151,6 +151,47 @@ section#Experience .container .title {
     background-color: #D72323;
 }
 
+section#Experience .container .body {
+    padding: 50px 0;
+    position: relative;
+}
+
+section#Experience .container .body .project {
+    background-color: #3A4750;
+    color: white;
+    text-align: left;
+    display: block;
+    width: 48%;
+    margin: 1%;
+    float: left;
+}
+
+section#Experience .container .body .project .text-wrapper {
+    padding: 15px;
+}
+
+section#Experience .container .body .project .title {
+    font-family: 'Roboto Slab', serif;
+    background: none;
+    font-size: 2em;
+    padding: 0;
+}
+
+section#Experience .container .body .project .subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    font-style: italic;
+    padding: 0;
+}
+
+section#Experience .container .body .project .desc {
+    padding-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
 
 /* mobile navbar */
 
