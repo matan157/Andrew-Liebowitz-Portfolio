@@ -7,3 +7,240 @@
 *   font-family: 'Open Sans', sans-serif;
 *   font-family: 'Roboto Slab', serif;
 */
+
+body {
+    font-size: 14px;
+}
+
+
+/* section navigation */
+
+section#navigation {
+    background-color: rgba(48, 56, 65, 0.7);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    width: 100%;
+    position: fixed;
+}
+
+section#navigation ul {
+    margin: 0 auto;
+    text-align: center;
+}
+
+section#navigation ul li {
+    font-size: 1.3em;
+    display: inline-block;
+    padding: 0.5em 3em;
+}
+
+section#navigation ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 3px;
+}
+
+
+/* section home */
+
+section#Home {
+    background-color: #303841;
+    text-align: center;
+}
+
+section#Home .container {
+    height: 50em;
+    line-height: 50em;
+}
+
+section#Home .title-container {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+section#Home .name-title {
+    color: #D72323;
+    font-size: 4em;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+}
+
+section#Home .sub-name-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 1.5em;
+}
+
+section#Home .social-row {
+    font-size: 3em;
+    padding-bottom: 0.5em;
+}
+
+section#Home .social-row ul {
+    list-style: none;
+}
+
+section#Home .social-row ul li {
+    display: inline-block;
+    padding: 0 1em;
+}
+
+section#Home .social-row ul li a,
+section#Home .social-row ul li a:visited {
+    color: white;
+}
+
+section#Home .social-row ul li a:hover {
+    color: #eee;
+}
+
+section#Home .social-row ul li a:active {
+    color: #aaa;
+}
+
+
+/* section about */
+
+section#About {
+    background-color: white;
+    text-align: left;
+}
+
+section#About .container {
+    padding: 100px 0;
+}
+
+section#About .container .title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.5em;
+    padding: 5px 10px;
+    font-weight: bold;
+    display: inline-block;
+    color: white;
+    background-color: #D72323;
+}
+
+section#About .container .body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    padding: 2em 0;
+}
+
+
+/* experience section */
+
+section#Experience {
+    background-color: white;
+    text-align: left;
+}
+
+section#Experience .container {
+    padding: 0;
+}
+
+section#Experience .container .title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.5em;
+    padding: 5px 10px;
+    font-weight: bold;
+    display: inline-block;
+    color: white;
+    background-color: #D72323;
+}
+
+
+/* mobile navbar */
+
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+    color: rgba(255, 255, 255, 1);
+}
+
+#custom-bootstrap-menu.navbar-default {
+    font-size: 14px;
+    background-color: rgba(48, 56, 65, 1);
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(248, 248, 248, 0);
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(194, 194, 194, 1);
+    background-color: rgba(248, 248, 248, 0);
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(51, 51, 51, 1);
+    background-color: rgba(231, 231, 231, 1);
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+    border-color: #ddd;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+    background-color: #ddd;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #303841;
+}
+
+section#mobile-navigation .navbar {
+    margin-bottom: 0;
+}
+
+
+/* Underline From Center */
+
+.hvr-underline {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+}
+
+.hvr-underline:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: white;
+    height: 1px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-underline:hover:before,
+.hvr-underline:focus:before,
+.hvr-underline:active:before {
+    left: 0;
+    right: 0;
+}
