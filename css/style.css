@@ -125,10 +125,12 @@ section#Home .social-row ul {
     margin-bottom: 0;
 }
 
-section#Home .social-row ul li,
-footer .social-row ul li {
+section#Home .social-row ul li:not(:first-child) {
+    padding-left: 1em;
+}
+
+section#Home .social-row ul li {
     display: inline-block;
-    padding: 0 1em;
 }
 
 section#Home .social-row ul li a,
@@ -278,6 +280,7 @@ footer .andrew {
     background-color: rgba(48, 56, 65, 1);
     border-width: 1px;
     border-radius: 4px;
+    border-color: rgba(48, 56, 65, 1);
 }
 
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
@@ -299,7 +302,7 @@ footer .andrew {
 }
 
 #custom-bootstrap-menu.navbar-default .navbar-toggle {
-    border-color: #ddd;
+    border-color: rgba(48, 56, 65, 1);
 }
 
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
@@ -358,4 +361,72 @@ section#mobile-navigation .navbar {
 .hvr-underline:active:before {
     left: 0;
     right: 0;
+}
+
+@media(max-width: 800px) {
+    body {
+        font-size: 12px;
+    }
+    section#About .body,
+    section#Experience .body {
+        margin: 0 1em;
+    }
+    section .title {
+        margin: 0 0.5em;
+    }
+    section#Home .name-title {
+        font-size: 3em;
+    }
+    section#Home .sub-name-title {
+        font-size: 1.2em;
+    }
+    section#Home .social-row ul li:not(:first-child) {
+        padding-left: 1em;
+    }
+    section#Experience .container .body .project {
+        background-color: #3A4750;
+        color: white;
+        text-align: left;
+        display: block;
+        width: 98%;
+        margin: 1%;
+        float: none;
+    }
+    section#Experience .container .body .project .title {
+        margin: 0;
+    }
+    section#Experience .container .body .project .text-wrapper {
+        padding: 15px;
+    }
+    section#Experience .container .body .project .title {
+        font-family: 'Roboto Slab', serif;
+        background: none;
+        font-size: 2em;
+        padding: 0;
+    }
+    section#Experience .container .body .project .subtitle {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1em;
+        font-weight: 700;
+        font-style: italic;
+        padding: 0;
+    }
+    section#Experience .container .body .project .desc {
+        padding-top: 20px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.2em;
+        font-weight: 300;
+    }
+}
+
+@media(max-width: 600px) {
+    section#Home .name-title {
+        font-size: 2.5em;
+    }
+    section#Home .sub-name-title {
+        font-size: 1.2em;
+    }
+    section#Home .social-row ul li:not(:first-child) {
+        padding-left: 0.7em;
+    }
 }
