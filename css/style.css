@@ -10,6 +10,42 @@
 
 body {
     font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Default link colors */
+
+a {
+    text-decoration: none;
+}
+
+a,
+a:visited {
+    color: #D72323;
+}
+
+a:hover {
+    color: #662323;
+}
+
+a:active {
+    color: #aa2323;
+}
+
+.email a,
+.email a:visited {
+    color: white;
+    font-style: italic;
+}
+
+.email a:hover {
+    color: #eee;
+    text-decoration: none;
+}
+
+.email a:active {
+    color: #666;
 }
 
 
@@ -21,6 +57,7 @@ section#navigation {
     font-weight: 300;
     width: 100%;
     position: fixed;
+    z-index: 99;
 }
 
 section#navigation ul {
@@ -49,8 +86,8 @@ section#Home {
 }
 
 section#Home .container {
-    height: 50em;
-    line-height: 50em;
+    height: 25em;
+    line-height: 25em;
 }
 
 section#Home .title-container {
@@ -75,14 +112,21 @@ section#Home .sub-name-title {
 
 section#Home .social-row {
     font-size: 3em;
-    padding-bottom: 0.5em;
+    padding-bottom: 1em;
+}
+
+section#Home .social-row .email {
+    font-size: 0.5em;
+    padding-left: 1em;
 }
 
 section#Home .social-row ul {
     list-style: none;
+    margin-bottom: 0;
 }
 
-section#Home .social-row ul li {
+section#Home .social-row ul li,
+footer .social-row ul li {
     display: inline-block;
     padding: 0 1em;
 }
@@ -156,13 +200,21 @@ section#Experience .container .body {
     position: relative;
 }
 
+section#Experience .container .body .project:nth-child(odd) {
+    margin-right: 1%;
+}
+
+section#Experience .container .body .project:nth-child(even) {
+    margin-left: 1%;
+}
+
 section#Experience .container .body .project {
     background-color: #3A4750;
     color: white;
     text-align: left;
     display: block;
-    width: 48%;
-    margin: 1%;
+    width: 49%;
+    margin: 1% 0;
     float: left;
 }
 
@@ -190,6 +242,28 @@ section#Experience .container .body .project .desc {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
     font-weight: 300;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #303841;
+    color: white;
+    height: 3em;
+    bottom: 0;
+    position: relative;
+    text-align: center;
+    line-height: 3em;
+    margin-top: 1em;
+}
+
+footer span {
+    padding: 0 1em;
+}
+
+footer .andrew {
+    font-family: 'Roboto Slab', serif;
 }
 
 
